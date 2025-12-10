@@ -1,0 +1,182 @@
+body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+@font-face {
+     font-family: 'Waltograph';
+     src: url('../photography/waltograph/') format('woff2'),
+          url('../photography/waltograph/waltograph.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+.hero_section {
+     background-image: url(./imgs/hero_bg.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+
+.icons_container {
+     display: flex;
+     justify-content: space-between;
+     padding: 54px 92px;
+}
+
+.header_facebook,
+.hero_twitter,
+.hero_instagram {
+     width: 24px;
+     height: 24px;
+}
+
+.Herosocial_icons {
+     display: flex;
+     gap: 20px;
+}
+
+.hero_content{
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+}
+
+.hero_content_container{
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center ;
+margin: 10px;
+}
+
+
+.hero_textOne {
+     height: 57px;
+     font-weight: 700;
+     font-size: 40px;
+}
+
+.hero_subText {
+     width: 896px;
+     height: 102px;
+     font-weight: 200;
+     font-size: 24px;
+     letter-spacing: 0%;
+     font-optical-sizing: auto;
+     font-style: normal;
+}
+
+.hero_textOne,
+.hero_subText,
+.see_portfolio_Text {
+     font-family: "Quicksand", sans-serif;
+     color: rgba(255, 255, 255, 1);
+}
+
+.see_portfolio_btn {
+     width: 299px;
+     height: 69px;
+     border-radius: 5px;
+     border: 1.5px solid rgba(255, 255, 255, 1);
+     background: none;
+     padding-top: 23px 81px 23px 81px;
+     gap: 10px;
+}
+
+button {
+cursor: pointer;
+}
+.d{
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.see_portfolio_Text {
+     width: 137px;
+     height: 23px;
+     font-weight: 700;
+     text-align: center;
+}
+
+.hire_me_btn {
+width: 233px;
+height: 69px;
+border-radius: 5px;
+padding: 23px 81px;
+gap: 10px;
+border: none;
+background: rgba(49, 152, 115, 1);
+}
+
+.s{
+position: relative;
+top: 180px;
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+.navigator{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     left: 90px;
+}
+
+
+
+/* Tablets */
+@media (max-width: 900px) {
+     .hero_textOne {
+          font-size: 32px;
+     }
+
+     .hero_subText {
+          font-size: 18px;
+          width: 100%;
+     }
+
+     .icons_container {
+          padding: 30px;
+     }
+}
+
+
+/* Mobile Phones
+@media (max-width: 600px) {
+     .hero_content {
+          margin-top: 60px;
+     }
+
+     .hero_textOne {
+          font-size: 26px;
+     }
+
+     .hero_subText {
+          font-size: 16px;
+     }
+
+     .d {
+          flex-direction: column;
+          gap: 15px;
+     }
+
+     .icons_container {
+          padding: 20px;
+     }
+
+     .Herosocial_icons {
+          gap: 10px;
+     }
+} */

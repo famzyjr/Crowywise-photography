@@ -1,182 +1,211 @@
-body {
+* {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
 }
 
-
-@font-face {
-     font-family: 'Waltograph';
-     src: url('../photography/waltograph/') format('woff2'),
-          url('../photography/waltograph/waltograph.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-}
-
-
 .hero_section {
-     background-image: url(./imgs/hero_bg.png);
+     background-image: url("imgs/hero_bg.png");
      background-position: center;
-     background-repeat: no-repeat;
+     background-attachment: fixed;
      background-size: cover;
-     display: flex;
-     flex-direction: column;
      min-height: 100vh;
+     width: 100%;
 }
 
-.icons_container {
+.hero_textOne,
+.see_portfolioText,
+.hireMe,
+.hero_subtext {
+     font-family: 'quicksand', sans-serif;
+}
+
+.hero_header {
      display: flex;
      justify-content: space-between;
-     padding: 54px 92px;
+     padding: 50px;
 }
 
-.header_facebook,
-.hero_twitter,
-.hero_instagram {
-     width: 24px;
-     height: 24px;
-}
-
-.Herosocial_icons {
+.header_socials {
      display: flex;
      gap: 20px;
 }
 
-.hero_content{
-display: flex;
-justify-content: center;
-flex-direction: row;
-align-items: center;
-}
-
-.hero_content_container{
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center ;
-margin: 10px;
-}
-
-
 .hero_textOne {
-     height: 57px;
      font-weight: 700;
      font-size: 40px;
-}
-
-.hero_subText {
-     width: 896px;
-     height: 102px;
-     font-weight: 200;
-     font-size: 24px;
-     letter-spacing: 0%;
-     font-optical-sizing: auto;
-     font-style: normal;
-}
-
-.hero_textOne,
-.hero_subText,
-.see_portfolio_Text {
-     font-family: "Quicksand", sans-serif;
      color: rgba(255, 255, 255, 1);
-}
-
-.see_portfolio_btn {
-     width: 299px;
-     height: 69px;
-     border-radius: 5px;
-     border: 1.5px solid rgba(255, 255, 255, 1);
-     background: none;
-     padding-top: 23px 81px 23px 81px;
-     gap: 10px;
-}
-
-button {
-cursor: pointer;
-}
-.d{
-display: flex;
-justify-content: center;
-gap: 20px;
-}
-
-.see_portfolio_Text {
-     width: 137px;
-     height: 23px;
-     font-weight: 700;
      text-align: center;
 }
 
-.hire_me_btn {
-width: 233px;
-height: 69px;
-border-radius: 5px;
-padding: 23px 81px;
-gap: 10px;
-border: none;
-background: rgba(49, 152, 115, 1);
-}
 
-.s{
-position: relative;
-top: 180px;
-display: flex;
-flex-direction: column;
-
-}
-
-
-
-.navigator{
+.dd{
      display: flex;
      flex-direction: column;
-     position: relative;
-     left: 90px;
+     gap: 20px;
 }
 
+.hero_content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     
+}
+
+.d {
+     display: flex;
+     flex-direction: column;
+}
+
+.left_con {
+     display: flex;
+     justify-content: flex-end;
+     margin: 20px;
+     position: relative;
+     top: -100px;
+     right: 100px;
+}
+
+.navigator {
+     display: flex;
+     flex-direction: column;
+     margin-left: 100px;
+}
+
+.hero_subtext {
+     max-width: 700px;
+     font-size: 24px;
+     font-weight: 400;
+     line-height: 1.5;
+     text-align: center;
+     font-size: 24px;
+     color: rgba(255, 255, 255, 1);
+}
+
+.see_portfolioBtn{
+     width: 299px;
+     height: 69px;
+     border-radius: 5px;
+     padding: 23px 81px;
+     background: none;
+     border: 1.5px solid rgba(255, 255, 255, 1);
+}
+
+.see_portfolioText{
+     font-weight: 700;
+     font-size: 16px;
+     color: rgba(255, 255, 255, 1);
+}
+
+.hireMeBtn{
+     width: 233px;
+     height: 69px;
+     border-radius: 5px;
+     padding: 23px 81px;
+     background-color: rgba(49, 152, 115, 1);
+     border: none;
+}
+
+.hireMeText {
+     font-weight: 700;
+     font-size: 16px;
+     text-align: center;
+     color: rgba(255, 255, 255, 1);
+}
+
+.header_btn {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+}
 
 
 /* Tablets */
-@media (max-width: 900px) {
-     .hero_textOne {
-          font-size: 32px;
+@media (max-width: 875px) {
+     .hero_content {
+          flex-wrap: wrap;
+          flex-direction: column;
+          gap: 30px;
+          padding: 20px;
+     }
+    .d{
+     display: flex;
+     
+    }
+     .navigator {
+          display: none;
      }
 
-     .hero_subText {
-          font-size: 18px;
-          width: 100%;
+     .left_con {
+          margin: 0;
+          position: static;
      }
 
-     .icons_container {
-          padding: 30px;
+     .hero_subtext {
+          font-size: 20px;
+          max-width: 90%;
      }
 }
 
 
-/* Mobile Phones
-@media (max-width: 600px) {
+/* Mobile */
+@media (max-width: 575px) {
+
      .hero_content {
-          margin-top: 60px;
+          flex-direction: column;
+          gap: 20px;
+          padding: 50px;
      }
 
      .hero_textOne {
-          font-size: 26px;
+          font-size: 28px;
      }
 
-     .hero_subText {
+     .hero_subtext {
           font-size: 16px;
+          max-width: 100%;
      }
 
-     .d {
+     .header_btn {
           flex-direction: column;
-          gap: 15px;
-     }
-
-     .icons_container {
-          padding: 20px;
-     }
-
-     .Herosocial_icons {
+          width: 100%;
+          display: flex;
+          align-items: center;
           gap: 10px;
      }
-} */
+
+     .see_portfolioBtn,
+     .hireMeBtn {
+          width: 90%;
+          height: auto;
+          padding: 18px 0;
+     }
+
+     .see_portfolioText,
+     .hireMeText {
+          font-size: 14px;
+     }
+
+     .left_con {
+          position: static;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 10px;
+     }
+
+.header_icon{
+display: flex;
+justify-content: center;
+
+}
+     .header_socials{
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          top: 420px;
+          left: 20px;
+     }
+}

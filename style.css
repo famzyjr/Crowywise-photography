@@ -420,7 +420,52 @@ body {
   object-fit: cover;
   display: block;
 }
-
+.q{
+margin-top: 200px;
+}
+.BrunoBabey{
+   margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+}
+.BrunoBabeyimg{
+  background-image: url(imgs/Rectangle\ 49.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.quoteCon{
+  display: flex;
+  justify-content: center;
+}
+.BrunoBabeyPara{
+  width: 717px;
+  font-weight: 400;
+  font-size: 34px;
+  color: #FFFFFF;
+}
+.quote{
+width: 90px;
+height: 90px;
+border-radius: 50px;
+background-color: #319873;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.Bruno{
+  width: 160px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.brunoCon{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 @media (max-width: 900px) {
   .portfolio_other_work_container {
     grid-template-columns: 1fr;
@@ -433,9 +478,6 @@ body {
   .Btn {
     text-align: center;
   }
- 
-
- 
 }
 
 @media (max-width: 600px) {
@@ -554,10 +596,10 @@ body {
   }
 }
 
-@media(max-width:590px){
-  .producer_icons{
-  display: flex;
-   flex-wrap: wrap;
+@media (max-width: 590px) {
+  .producer_icons {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -628,21 +670,21 @@ body {
     flex-direction: row;
     gap: 20px;
   }
-  .portfolio_featuared_work{
+  .portfolio_featuared_work {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .date_con{
-  display: flex;
-  flex-direction: column;
+  .date_con {
+    display: flex;
+    flex-direction: column;
   }
 
-  .Exective_producer_para{
-  width: 300px;
+  .Exective_producer_para {
+    width: 300px;
   }
 
-  .ExectiveProducer{
-   text-align: center;
+  .ExectiveProducer {
+    text-align: center;
   }
 }
